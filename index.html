@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    // Toggle menu on click
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+    });
+
+    // Close menu when clicking outside (optional)
+    document.addEventListener("click", function (event) {
+        if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+            navLinks.classList.remove("show");
+        }
+    });
+});
+
+
+</script>
+
+</head>
+<body>
+
+
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <a href="https://www.kdkce.edu.in/">
+                    <img src="/images/kdk-logo.png" alt="College Logo">
+                </a>
+            </div>
+    
+            <!-- Navigation -->
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#programs">Programs Offered</a></li>
+                    <li><a href="#faculty">Faculty</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Hamburger Menu Button (Only for Mobile) -->
+            <div class="menu-toggle" id="menuToggle">☰</div>
+        </div>
+    </header>
+    
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        
+        <h1>Welcome to K. D. K. College Of Engineering</h1>
+        <p>Imparting Quality Education Since 1984</p>
+        <a href="https://www.kdkce.edu.in/"><button>Read More</button></a>
+        
+    </section>
+    <br><br>
+
+    <!-- About Section -->
+    <section id="about">
+     <div id="abox">
+        <div id="aimg"><img src="/images/aboutkdk.png" alt="aboutimg">
+        </div>
+        <div id="adesc">
+            <h2>About Us</h2>
+            <p>The college is committed to providing excellent education and nurturing future engineers...</p>
+            <p>The Karmavir Dadasaheb Kannamwar College of Engineering, situated in the heart of India in Nagpur city, established in 1984 by Backward Class Youth Relief Committee (BCYRC) is one of the leading engineering colleges in Maharashtra State.
+                Government of Maharashtra has conferred ‘A’ Grade on the basis of excellence & adequate infrastructure as well as academic achievements of students and faculty. It is approved byAICTE New Delhi , DTE,Government of Maharashtra. The college successfully continues to attract attention of scholars from all over the subcontinent.
+                The college runs under graduate and postgraduate courses i.e two courses with seven branches of Engineering and three PG programs in Mechanical Engineering ,Civil Engineering and Master of Business Administration . In addition to these, college has approved research centre for Ph.D in Civil EngineeringandMechanical Engineering with 15 seats each .</p>
+        </div>
+     </div>
+    
+        
+        
+    </section>
+
+   <!-- Programs Section -->
+<section id="programs">
+    <h2>Programs Offered</h2>
+    <div class="program-list">
+        <a href="https://www.kdkce.edu.in/index.php/department/Contentpage/index/RmJVcDdlcEhTZnhTWlZFPQ%3D%3D/RStZcG8vWkZWUHhX/">
+            <div class="program-item">Civil Engineering</div>
+        </a>
+        <a href="https://www.kdkce.edu.in/index.php/department/Contentpage/index/RmJVcTdlcEhTZnhTWlZFPQ%3D%3D/RlAwcnZ1cEhTZnhTWlZFPQ%3D%3D/">
+            <div class="program-item">Mechanical Engineering</div>
+        </a>
+        <a href="https://www.kdkce.edu.in/index.php/department/Contentpage/index/RmJVcjdlcEhTZnhTWlZFPQ%3D%3D/SHZJMW91dGFWdjVRWXc9PQ%3D%3D/">
+            <div class="program-item">Computer Science Engineering</div>
+        </a>
+        <a href="https://www.kdkce.edu.in/index.php/department/Contentpage/index/RmJVdDdlcEhTZnhTWlZFPQ%3D%3D/Ri84dXZ1cEhTZnhTWlZFPQ%3D%3D/">
+            <div class="program-item">Electronics and Telecommunication</div>
+        </a>    
+        <a href="https://www.kdkce.edu.in/index.php/department/Contentpage/index/RmJVdTdlcEhTZnhTWlZFPQ%3D%3D/Ri9NaHZ1cEhTZnhTWlZFPQ%3D%3D/">
+            <div class="program-item">Information Technology</div>
+        </a>    
+        <a href="https://www.kdkce.edu.in/index.php/department/Contentpage/index/RmJVczdlcEhTZnhTWlZFPQ%3D%3D/Ri9vdnZ1cEhTZnhTWlZFPQ%3D%3D/">
+            <div class="program-item">Electrical Engineering</div>
+        </a>    
+        <a href="https://www.kdkce.edu.in/index.php/department/Contentpage/index/RmJVcHBhVkdWT05RWjFmSQ%3D%3D/RmZvcnZ1cEhTZnhTWlZFPQ%3D%3D/">
+            <div class="program-item">Artificial Inteligence & Data Science</div>
+        </a>    
+        <a href="https://www.kdkce.edu.in/index.php/department/Contentpage/index/RmJVdjdlcEhTZnhTWlZFPQ%3D%3D/Ri93c3Z1cEhTZnhTWlZFPQ%3D%3D/">
+            <div class="program-item">First year (Basic Science & Humanity)</div>
+        </a>    
+
+    </div>
+</section>
+
+
+   <!-- Faculty Section -->
+<section id="faculty">
+    <h2>Our Faculty</h2>
+    <div class="faculty-list">
+        <div class="faculty-item">
+            <img src="/images/principal.jpg" alt="principal" style="height: 200px;">
+            <p>Dr. Valsson Varghese, Civil Engineering, Principal</p>
+        </div>
+        <div class="faculty-item">
+            <img src="/images/vice-principal.jpg" alt="vice-principal" style="height: 200px;">
+            <p>Dr. Avinash M. Badar, Civil Engineering, Professor, Vice-Principal</p>
+        </div>
+    </div>
+    <!-- "Know More" Button -->
+    <center><div class="more-button">
+        <a href="https://www.kdkce.edu.in/index.php/facultylist/index/#viewList" class="button" style="text-decoration: none; color: white; text-align: center;">Know More Faculty Members</a>
+    </div>
+    </center>
+    <br>
+</section>
+<br>
+
+
+    <!-- Important Links -->
+    <section id="important-links">
+        <h2>Important Links</h2>
+        <div class="links-grid">
+            <a href="https://www.kdkce.edu.in/index.php/Contentpage/index/RmZzdnZ1cEhTZnhTWlZFPQ%3D%3D/">
+                Admissions 2024-2025</a>
+            <a href="https://www.kdkce.edu.in/index.php/Contentpage/index/RVAwMW91dGFWdjVRWXc9PQ%3D%3D/">
+                National-International Conference</a>
+            <a href="https://www.kdkce.edu.in/index.php/Contentpage/index/RVBNMW91dGFWdjVRWXc9PQ%3D%3D/">
+                KDK Data Center</a>
+        </div>
+        <div class="button-container">
+            <a href="https://www.kdkce.edu.in/important-links" class="know-more-button">Know More</a>
+        </div>
+    
+    </section>
+    <br><br>
+
+
+    <!-- Contact Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/images/logo-kdk-white.png" alt="KDK College of Engineering Logo" class="logo-image">
+                <h3>KDK COLLEGE OF ENGINEERING, NAGPUR</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="https://www.kdkce.edu.in/index.php/department/Contentpage/index/RmJVcG9xVkdWZU5RWjFmSQ%3D%3D/RlBJcXZ1cEdTZnhTWlZFPQ%3D%3D/">Training and Internship</a></li>
+                    <li><a href="https://www.kdkce.edu.in/index.php/Contentpage/index/RWZrMW91cGFWdjVRWXc9PQ%3D%3D/">NAAC</a></li>
+                    <li><a href="https://www.kdkce.edu.in/index.php/Contentpage/index/RXZNcHZ1cEdTZnhTWlZFPQ%3D%3D/">NAAC-SSR</a></li>
+                    <li><a href="https://www.kdkce.edu.in/index.php/Contentpage/index/RVBnMW91cGFWdjVRWXc9PQ%3D%3D/">Feedback</a></li>
+                    <li><a href="https://www.kdkce.edu.in/index.php/Contentpage/index/RXY0cnZ1cEdTZnhTWlZFPQ%3D%3D/">NAAC Cycle-II-DVV Clarification</a></li>
+                    <li><a href="https://www.kdkce.edu.in/index.php/Contentpage/index/RXY4aHZ1cEdTZnhTWlZFPQ%3D%3D/">NAAC-SSR-Cycle-II-Documents</a></li>
+                    <li><a href="https://www.kdkce.edu.in/index.php/Contentpage/index/RXZ3aHZ1cEdTZnhTWlZFPQ%3D%3D/">Career Katta</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h4>Contact Address</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Great Nag Road, Nandanvan, Nagpur- 440 024 (M.S.)</p>
+                <p><i class="fas fa-phone-alt"></i> <strong>0712-2711400</strong></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Copyright © 2021 KDK College of Engineering, Nagpur All rights reserved. Site Design and Developed by 
+               <a href="https://cstech.com">CsTech</a> Last Update: 24/10/2024
+            </p>
+        </div>
+    </footer>
+    
+
+   
+   
+        <!-- Chatbot Section -->
+        <div id="chatbot">
+           
+            <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https:&#x2F;&#x2F;www.kdkce.edu.in&#x2F;images&#x2F;kdk-logo.png"
+  chat-title="KDKCE"
+  agent-id="fc713d28-5994-4a84-b697-cb4319baa2fb"
+  language-code="en"
+></df-messenger>
+        </div>
+    
+        
+    </body>
+    </html>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
